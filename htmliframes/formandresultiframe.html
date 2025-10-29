@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q17 - Form with Iframe</title>
+</head>
+<body>
+    <h2>Form with Iframe Output</h2>
+
+    <form onsubmit="document.getElementById('resultFrame').srcdoc='<h3>Form successfully submitted.</h3>'; return false;">
+        <label>Enter your name:</label>
+        <input type="text" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <iframe id="resultFrame" width="80%" height="100" title="Result Frame"></iframe>
+</body>
+</html>
