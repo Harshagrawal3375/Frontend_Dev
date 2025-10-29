@@ -1,0 +1,16 @@
+/* --- Q4: Article Styles --- */
+body { font-family: Georgia, serif; line-height: 1.6; margin: 2em; background: #fdfcfb; }
+
+p { margin: 1em 0; }
+
+p::first-letter { font-size: 200%; color: #0077b6; }
+p::first-line { font-weight: bold; }
+
+mark { background: #ffeb3b; }
+
+blockquote {
+  border-left: 4px solid #0077b6;
+  background: #e3f2fd;
+  padding: 10px 20px;
+  margin: 20px 0;
+}

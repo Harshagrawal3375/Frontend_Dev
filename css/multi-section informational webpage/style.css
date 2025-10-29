@@ -1,0 +1,43 @@
+/* --- Q2: City Info Page --- */
+
+body { margin: 0; font-family: sans-serif; }
+
+header {
+  text-align: center;
+  background: linear-gradient(to right, #0052cc, #66a6ff);
+  color: white;
+  padding: 1.5em;
+}
+
+nav a {
+  margin: 0 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.section {
+  padding: 80px 20px;
+  color: #222;
+}
+
+.history {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+.culture {
+  background: linear-gradient(120deg, #f6d365, #fda085);
+}
+
+.places {
+  background: radial-gradient(circle, #b3ffab, #12fff7);
+  background-attachment: fixed;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #001f3f;
+  color: white;
+}

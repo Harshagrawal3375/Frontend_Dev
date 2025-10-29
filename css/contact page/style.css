@@ -1,0 +1,47 @@
+/* --- Q7: Contact Page --- */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #2196f3, #21cbf3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 400px;
+}
+
+form { display: flex; flex-direction: column; }
+
+label { margin-top: 10px; font-weight: bold; }
+
+input, textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover { background: #1976d2; }

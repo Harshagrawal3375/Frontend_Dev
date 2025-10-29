@@ -1,0 +1,102 @@
+/* --- Q10: Full Website Layout --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; }
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background: #0052cc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+/* Hero */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.about img { border-radius: 10px; width: 300px; }
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background: rgba(0,0,255,0.1);
+}
+
+.service {
+  background: white;
+  border: 2px solid #0052cc;
+  padding: 30px;
+  border-radius: 10px;
+  width: 25%;
+  text-align: center;
+}
+
+/* Contact Form */
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  margin: auto;
+}
+
+input, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #0052cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .about { flex-direction: column; text-align: center; }
+  .service { width: 80%; margin-bottom: 10px; }
+}
