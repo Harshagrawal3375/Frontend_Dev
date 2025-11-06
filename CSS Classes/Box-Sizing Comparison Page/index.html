@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Box Sizing Comparison</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="compare">
+    <section class="demo default">
+      <h2>Default (content-box)</h2>
+      <div class="box">Content-box</div>
+      <p>Width + padding + border increases total size.</p>
+    </section>
+
+    <section class="demo borderbox">
+      <h2>border-box</h2>
+      <div class="box">border-box</div>
+      <p>Width includes padding and border.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: system-ui, Segoe UI, Roboto, Arial, Helvetica;
+    background: #fbfdff;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh
+}
+
+.compare {
+    display: flex;
+    gap: 28px;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center
+}
+
+.demo {
+    flex: 1;
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    text-align: center
+}
+
+.demo .box {
+    width: 200px;
+    padding: 20px;
+    border: 6px solid #111827;
+    margin: 16px auto;
+    background: #eef2ff
+}
+
+.default .box {
+    box-sizing: content-box
+}
+
+.borderbox .box {
+    box-sizing: border-box
+}
+
+@media (max-width:700px) {
+    .compare {
+        flex-direction: column
+    }
+}

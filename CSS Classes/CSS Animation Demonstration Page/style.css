@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body,
+html {
+    height: 100%
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7fafc;
+    font-family: Inter, system-ui
+}
+
+.stage {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row
+}
+
+.anim-box {
+    width: 120px;
+    height: 80px;
+    background: #10b981;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    animation: slide 2s ease-in-out infinite alternate
+}
+
+.bouncer {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ef4444;
+    animation: bounce 1s ease-in-out infinite;
+    animation-delay: .2s
+}
+
+.color-text {
+    font-size: 20px;
+    font-weight: 700;
+    animation: colorShift 3s ease-in-out infinite alternate;
+    align-self: center
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-20px)
+    }
+
+    100% {
+        transform: translateX(20px)
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-40px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes colorShift {
+    0% {
+        color: #0ea5a4
+    }
+
+    50% {
+        color: #7c3aed
+    }
+
+    100% {
+        color: #0ea5a4
+    }
+}
+
+@media (max-width:700px) {
+    .stage {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px
+    }
+}

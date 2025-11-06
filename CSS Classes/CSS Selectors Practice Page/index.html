@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Selectors Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>CSS Selectors Practice</h1></header>
+  <main class="content">
+    <section>
+      <h2>Element Selector</h2>
+      <p>All paragraphs like this are styled by an element selector.</p>
+      <p>Another paragraph shows same styling.</p>
+    </section>
+
+    <section>
+      <h2>Class &amp; ID</h2>
+      <p class="lead">This uses a class selector (.lead).</p>
+      <p id="unique">This uses an ID selector (#unique).</p>
+    </section>
+
+    <section>
+      <h2>Attribute Selector</h2>
+      <a href="#" title="link1">Anchor with title</a>
+      <a data-role="special" href="#">Anchor with data-role</a>
+    </section>
+
+    <section>
+      <h2>Combinators</h2>
+      <div class="parent">
+        <h3>Parent &gt; Child</h3>
+        <p class="child">Direct child paragraph</p>
+        <div>
+          <p>Nested paragraph (descendant)</p>
+        </div>
+      </div>
+
+      <h3>Siblings</h3>
+      <p class="first">First paragraph</p>
+      <p class="adjacent">Adjacent sibling (+)</p>
+      <p class="general">General sibling (~)</p>
+    </section>
+  </main>
+
+  <footer>Footer content — selectors demo</footer>
+</body>
+</html>
