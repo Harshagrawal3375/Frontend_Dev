@@ -1,0 +1,52 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f7f7f7;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 1s;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+
+.card:hover img {
+    filter: none;
+    transform: translateY(-10px);
+}
+
+@media(max-width:800px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
